@@ -1,70 +1,63 @@
 import React from "react";
 import Content1 from "../Assets/Images/Content1.png";
-import Content2 from "../Assets/Images/Content2.png";
+import Content2 from "../Assets/Images/Content2.jpg";
 import Content3 from "../Assets/Images/Content3.png";
 import Content4 from "../Assets/Images/Content4.png";
+import Content5 from "../Assets/Images/Content5.png";
+import Content6 from "../Assets/Images/Content6.png";
 
-const dishesA = [
-  { title: "Pollo a la plancha con ensalada mediterránea", ingredients: "Pollo, tomate, pepino, limón, aceite de oliva" },
-  { title: "Wraps de pollo", ingredients: "Pollo, palta, rúcula o lechuga" },
-  { title: "Ensalada de Quinoa", ingredients: "Pechuga, zanahoria, quinoa" },
-  { title: "Desmenuzado con puré", ingredients: "Pechuga, batata, mantequilla" },
-  { title: "Ensalada tibia", ingredients: "Lentejas, zanahoria, pollo,  aceite de oliva" },
+const sections = [
+  {
+    title: "🐔 Con pollo",
+    text: "Recetas llenas de sabor, ligereza y proteínas magras para el día a día..",
+    image: Content1,
+  },
+  {
+    title: "🐟 Con pescado o mariscos",
+    text: "Platos con la frescura del mar en platos simples y saludables.",
+    image: Content2,
+  },
+  {
+    title: "🥦 Vegetarianos / veganos",
+    text: "Opciones con vegetales, comida viva, colorida y llena de energía.",
+    image: Content3,
+  },
+  {
+    title: "🍳 Con huevos o proteínas rápidas",
+    text: "Preparaciones exprés, soluciones nutritivas para para días con muy poco tiempo.",
+    image: Content4,
+  },
+  {
+    title: "🍝 Con pastas o granos",
+    text: "Texturas suaves, energía lenta y combinaciones saciantes con un toque casero..",
+    image: Content5,
+  },
+  {
+    title: "🥗 Para llevar / meal prep",
+    text: "Comidas prácticas para preparar y disfrutar en cualquier lugar.",
+    image: Content6,
+  },
 ];
-
-const dishesB = [
-  { title: "Tacos de pollo", ingredients: "Pollo, maíz, limón" },
-  { title: "Salmón al vapor", ingredients: "Salmón, miel, zanahoria, brócoli" },
-  { title: "Ensalada fría", ingredients: "Atún, pepino, garbanzos" },
-  { title: "Wraps de atún", ingredients: "Atún, palta, Lechuga" },
-  { title: "Pasta integral con atún", ingredients: "Pasta integral, Atún, aceite de oliva" },
-];
-
-const dishesC = [
-  { title: "quinoa con atún", ingredients: "Quinoa, atún, maíz, pepino" },
-  { title: "Ceviche express", ingredients: "Pescado, limón, cebolla" },
-  { title: "Curry de garbanzos", ingredients: "Garbanzos, cebolla, leche" },
-  { title: "Hamburguesas de frijoles", ingredients: "Frijoles, ajo" },
-  { title: "Wok de tofu", ingredients: "Tofu, zanahoria, brócoli" },
-];
-
-const dishesD = [
-  { title: "Huevos al horno", ingredients: "Huevos, tomate, espinaca" },
-  { title: "Shakshuka express", ingredients: "Huevos, tomate, cebolla" },
-  { title: "Wrap de huevo", ingredients: "Huevos, aguacate, lechuga" },
-  { title: "Arroz frito", ingredients: "Arroz integral, huevos, arvejas" },
-  { title: "papas al horno", ingredients: "Papas, huevos, rúcula o lechuga" },
-];
-
-const MenuBlock = ({ items, imageLeft = false, imageSrc, imageAlt = "Platillo destacado" }) => (
-  <div className={`menu-block ${imageLeft ? "menu-block--reverse" : ""}`}>
-    <div className="menu-block__image">
-      <div className="image-placeholder has-image" aria-label={imageAlt}>
-        {imageSrc && (
-          <img src={imageSrc} alt={imageAlt} loading="lazy" decoding="async" />
-        )}
-      </div>
-    </div>
-    <div className="menu-block__list">
-      {items.map((item, idx) => (
-        <div className="menu-item" key={idx}>
-          <h4 className="menu-item__title">{item.title}</h4>
-          <p className="menu-item__ingredients">{item.ingredients}</p>
-        </div>
-      ))}
-    </div>
-  </div>
-);
 
 const MenuSection = () => {
   return (
     <div className="container">
       <h3 className="section__eyebrow">Nuestro contenido</h3>
+      <p className="section__text">
+        Entre el trabajo, las rutinas y el cansancio, cocinar puede parecer un reto. Este ebook te demuestra que con pocos ingredientes y un poco de intención, puedes crear comidas reales, rápidas y reconfortantes en minutos. Son seis capítulos, cada uno con diez recetas fáciles y nutritivas.
+      </p>
 
-      <MenuBlock items={dishesA} imageLeft={false} imageSrc={Content1} imageAlt="Platillo 1" />
-      <MenuBlock items={dishesB} imageLeft={true} imageSrc={Content2} imageAlt="Platillo 2" />
-      <MenuBlock items={dishesC} imageLeft={false} imageSrc={Content3} imageAlt="Platillo 3" />
-      <MenuBlock items={dishesD} imageLeft={true} imageSrc={Content4} imageAlt="Platillo 4" />
+      <div className="menu-simple">
+        {sections.map((s, i) => (
+          <div className="menu-card" key={i}>
+            <h4 className="menu-card__title">{s.title}</h4>
+            <p className="menu-card__text">{s.text}</p>
+            <div className="menu-card__image image-placeholder has-image" aria-label={s.title}>
+              <img src={s.image} alt={s.title} loading="lazy" decoding="async" />
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
