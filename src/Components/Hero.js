@@ -1,6 +1,6 @@
 import React from "react";
 import useTypewriter from "./useTypewriter";
-import Seccion1 from "../Assets/Images/Seccion1.jpeg";
+import Seccion1 from "../Assets/Images/Seccion1.jpg";
 
 const Hero = () => {
   const dynamic = useTypewriter({
