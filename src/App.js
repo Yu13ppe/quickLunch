@@ -1,7 +1,6 @@
 import React from "react";
 import "./Assets/Css/styles.css";
 
-import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import InfoSection from "./Components/InfoSection";
 import MenuSection from "./Components/MenuSection";
@@ -11,7 +10,6 @@ import ContactSection from "./Components/ContactSection";
 function App() {
   return (
     <div className="App">
-      <Navbar />
       <main>
         <section id="inicio" className="section section-hero">
           <Hero />

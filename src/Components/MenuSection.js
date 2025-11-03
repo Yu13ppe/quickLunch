@@ -51,7 +51,7 @@ const MenuBlock = ({ items, imageLeft = false }) => (
 const MenuSection = () => {
   return (
     <div className="container">
-      <h3 className="section__eyebrow">Nuestro menú</h3>
+      <h3 className="section__eyebrow">Nuestro contenido</h3>
 
       <MenuBlock items={dishesA} imageLeft={false} />
       <MenuBlock items={dishesB} imageLeft={true} />

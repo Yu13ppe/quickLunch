@@ -21,7 +21,7 @@ const Hero = () => {
           Comidas caseras, balanceadas y listas en minutos.
         </p>
         <div className="hero__cta">
-          <a href="#menu" className="btn btn-primary">Ver menú</a>
+          <a href="#menu" className="btn btn-primary">Ver contenido</a>
           <a href="#contacto" className="btn btn-outline">Pídelo ya</a>
         </div>
       </div>
