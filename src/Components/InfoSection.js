@@ -3,7 +3,7 @@ import React from "react";
 const InfoSection = () => {
   return (
     <div className="container info">
-      <h3 className="section__eyebrow">Comer bien es fácil</h3>
+      <h2 className="section__eyebrow">"Empieza hoy a cocinar sin estrés y disfrutar de cada bocado"</h2>
       <p className="section__text">
         Entre el trabajo, las rutinas y el cansancio, cocinar puede parecer un
         reto. Este libro será tu guía para comer mejor sin complicaciones ni
