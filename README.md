@@ -1,3 +1,20 @@
+# QuickLunch – Landing "60 almuerzos saludables" (estática)
+
+Landing con secciones: Navbar, Hero (efecto de tipeo), Info, Menú, Galería y Contacto.
+
+- El formulario de contacto está deshabilitado temporalmente (modo estático, sin backend).
+
+## Ejecutar en desarrollo (Windows PowerShell)
+
+```
+npm install
+npm start
+```
+
+Se abrirá en: http://localhost:3000
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
