@@ -1,5 +1,6 @@
 import React from "react";
 import useTypewriter from "./useTypewriter";
+import Seccion1 from "../Assets/Images/Seccion1.jpeg";
 
 const Hero = () => {
   const dynamic = useTypewriter({
@@ -26,7 +27,9 @@ const Hero = () => {
         </div>
       </div>
       <div className="hero__media">
-        <div className="image-placeholder image-placeholder--lg" aria-label="Espacio para imagen principal" />
+        <div className="image-placeholder image-placeholder--lg has-image" aria-label="Imagen principal">
+          <img src={Seccion1} alt="Receta destacada" loading="lazy" decoding="async" />
+        </div>
       </div>
     </div>
   );

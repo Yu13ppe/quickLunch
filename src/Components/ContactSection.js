@@ -34,9 +34,9 @@ const ContactSection = () => {
         </div>
       </form>
 
-      <div className="contact__media">
+      {/* <div className="contact__media">
         <div className="image-placeholder image-placeholder--wide" aria-label="Espacio para imagen/mapa de contacto" />
-      </div>
+      </div> */}
     </div>
   );
 };

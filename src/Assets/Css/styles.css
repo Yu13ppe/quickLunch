@@ -41,6 +41,10 @@ a { color: inherit; text-decoration: none; }
 .image-placeholder { width: 100%; aspect-ratio: 4 / 3; background: repeating-linear-gradient(45deg, #e8eeed 0 10px, #dde7e5 10px 20px); border: 2px dashed #b9c9c6; border-radius: 12px; }
 .image-placeholder--lg { aspect-ratio: 16 / 12; }
 .image-placeholder--wide { aspect-ratio: 16 / 7; }
+/* If the placeholder contains a real image, show it as a framed image */
+.image-placeholder { position: relative; overflow: hidden; }
+.image-placeholder.has-image { border: 0; background: none; }
+.image-placeholder img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px; }
 
 /* Info */
 .info { text-align: center; max-width: 800px; }
