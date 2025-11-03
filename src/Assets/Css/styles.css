@@ -27,6 +27,7 @@ a { color: inherit; text-decoration: none; }
 .cursor { color: #0c7c59; animation: blink 1.2s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
 .hero__subtitle { margin: 0 0 18px; color: #555; }
+.hero__subtitle strong { color: #0c7c59; font-weight: 800; }
 .hero__cta { display: flex; gap: 12px; }
 .hero__media { display: flex; justify-content: center; }
 

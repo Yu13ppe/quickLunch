@@ -19,11 +19,20 @@ const Hero = () => {
           <span className="cursor">|</span>
         </h1>
         <p className="hero__subtitle">
-          Comidas caseras, balanceadas y listas en minutos.
+          ¿Tu problema para cocinar es la falta de tiempo? ¡Aquí tienes la solución!
+          {/* ¿Tienes poco tiempo, pero quieres comer bien? */}
+        </p>
+        <p className="hero__subtitle">
+          <strong>60 recetas</strong> de almuerzos completos listos en menos de <strong>25 minutos</strong>
+          {/* Con estas <strong>60 recetas</strong> descubrirás que cocinar puede ser simple, saludable y delicioso. */}
+        </p>
+        <p className="hero__subtitle">
+          Descubre cómo cocinar puede ser <strong><em>fácil, nutritivo y delicioso</em></strong> con recetas pensadas para el ritmo de la vida moderna.
+          {/* Comidas completas listas en menos de <strong>25 minutos</strong> — <strong>Porque cuidarte también puede ser fácil.</strong> */}
         </p>
         <div className="hero__cta">
           <a href="#menu" className="btn btn-primary">Ver contenido</a>
-          <a href="#contacto" className="btn btn-outline">Pídelo ya</a>
+          <a href="#contacto" className="btn btn-outline">Pide tu eBook Aquí</a>
         </div>
       </div>
       <div className="hero__media">
