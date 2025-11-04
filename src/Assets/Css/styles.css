@@ -71,6 +71,29 @@ a { color: inherit; text-decoration: none; }
 .gallery__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 14px 0 20px; }
 .gallery__cta { text-align: center; }
 
+/* Carousel (infinite) */
+.carousel { overflow: hidden; margin: 12px 0 22px; }
+.carousel__track { display: flex; align-items: center; gap: 14px; will-change: transform; }
+.carousel__item { flex: 0 0 auto; width: clamp(180px, 24vw, 300px); }
+/* JS controla el movimiento; mantener pausa por hover manejado en JS */
+/* Hover effects: dim image and show overlay with caption */
+.carousel__item { position: relative; }
+.carousel__item img { transition: opacity 0.2s ease; }
+.carousel__item:hover img { opacity: 0.6; }
+.carousel__overlay { position: absolute; inset: 0; border-radius: 12px; display: flex; align-items: flex-end; padding: 10px 12px; background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.55) 100%); color: #fff; opacity: 0; transition: opacity 0.2s ease; }
+.carousel__item:hover .carousel__overlay { opacity: 1; }
+.carousel__title { margin: 0 0 2px; font-size: 0.98rem; font-weight: 700; }
+.carousel__ingredients { margin: 0; font-size: 0.85rem; opacity: 0.95; }
+
+@keyframes carousel-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__track { animation: none; }
+}
+
 /* Contact */
 .form { display: grid; gap: 14px; }
 .form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }

@@ -24,7 +24,7 @@ const sections = [
   },
   {
     title: "🍳 Con huevos o proteínas rápidas",
-    text: "Preparaciones exprés, soluciones nutritivas para para días con muy poco tiempo.",
+    text: "Preparaciones exprés, soluciones nutritivas para días con muy poco tiempo.",
     image: Content4,
   },
   {
@@ -42,7 +42,7 @@ const sections = [
 const MenuSection = () => {
   return (
     <div className="container">
-      <h3 className="section__eyebrow">Nuestro contenido</h3>
+      <h2 className="section__eyebrow">Nuestro contenido</h2>
       <p className="section__text">
         Entre el trabajo, las rutinas y el cansancio, cocinar puede parecer un reto. Este ebook te demuestra que con pocos ingredientes y un poco de intención, puedes crear comidas reales, rápidas y reconfortantes en minutos. Son seis capítulos, cada uno con diez recetas fáciles y nutritivas.
       </p>
