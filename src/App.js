@@ -5,7 +5,7 @@ import Hero from "./Components/Hero";
 import InfoSection from "./Components/InfoSection";
 import MenuSection from "./Components/MenuSection";
 import GallerySection from "./Components/GallerySection";
-import ContactSection from "./Components/ContactSection";
+import AboutSection from "./Components/AboutSection";
 
 function App() {
   return (
@@ -27,8 +27,8 @@ function App() {
           <GallerySection />
         </section>
 
-        <section id="contacto" className="section section-contact">
-          <ContactSection />
+        <section id="sobre-mi" className="section section-about">
+          <AboutSection />
         </section>
       </main>
     </div>
