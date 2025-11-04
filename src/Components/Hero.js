@@ -32,7 +32,7 @@ const Hero = () => {
         </p>
         <div className="hero__cta">
           <a href="#menu" className="btn btn-primary">Ver contenido</a>
-          <a href="#contacto" className="btn btn-outline">Pide tu eBook Aquí</a>
+          <a href="https://pay.hotmart.com/A102738978A" className="btn btn-outline">Pide tu eBook Aquí</a>
         </div>
       </div>
       <div className="hero__media">

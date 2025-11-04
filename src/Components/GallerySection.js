@@ -70,7 +70,7 @@ const GallerySection = () => {
       </div>
 
       <div className="gallery__cta">
-        <a href="#contacto" className="btn btn-primary">Pide tu eBook Aquí</a>
+        <a href="https://pay.hotmart.com/A102738978A" className="btn btn-primary">Pide tu eBook Aquí</a>
       </div>
     </div>
   );

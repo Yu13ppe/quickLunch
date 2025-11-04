@@ -11,7 +11,7 @@ const InfoSection = () => {
         saludables y llenas de sabor.
       </p>
       <div>
-        <a href="#contacto" className="btn btn-primary">
+        <a href="https://pay.hotmart.com/A102738978A" className="btn btn-primary">
           Pide tu eBook Aquí
         </a>
       </div>
